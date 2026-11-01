@@ -4,7 +4,7 @@
 
 This study began as a 2019 undergraduate project and was revisited in 2026 to strengthen empirical research skills and develop the research portfolio. The revised work reconstructs the data, uses Python rather than the original EViews workflow, tests time-series assumptions, and reassesses the economic interpretation. The [original 2019 paper](../archive/2019/Sambahamphe_FDI_Canada_2019.pdf) is archived unchanged.
 
-The [revised paper](../paper/Sambahamphe_FDI_Canada.pdf) is the main research output. The archive preserves the undergraduate submission as historical work rather than a current alternative estimate.
+The [Extended Working Paper](../paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.pdf) is the latest full research draft. The [shorter revised paper](../paper/Sambahamphe_FDI_Canada.pdf) is retained as a concise version. The archive preserves the undergraduate submission as historical work rather than a current alternative estimate.
 
 ### What changed from the archived paper
 
@@ -29,12 +29,20 @@ The audit covers both currencies and both sample endpoints, reports ADF lag choi
 ### Main findings
 
 1. For 1981-2018, the Canadian-dollar ADF tests reject a unit root for FDI (p < 0.001) and capacity slack (p = 0.010), but not for investment (p = 0.543) or expenditure (p = 0.970). These are specification-dependent test results, not definitive classifications. ADF chooses as many as eight lags in some tests, a substantial demand on a small annual sample.
-2. The investment-expenditure cointegration p-values are 0.002 for USD and 0.382 for CAD through 2018; through 2024 they are 0.358 and 0.291 respectively. Consequently, CAD and extended-sample ECMs are exploratory comparisons, not equally supported error-correction specifications.
+2. Under the earlier audit’s default AIC settings, the investment-expenditure cointegration p-values are 0.002 for USD and 0.382 for CAD through 2018; through 2024 they are 0.358 and 0.291 respectively. Under those settings, CAD and extended-sample ECMs are exploratory comparisons. The Extended Working Paper also reports a capped BIC configuration that changes these conclusions; the evidence is sensitive to the tested settings.
 3. The exchange-rate level does not reject a unit root at 5% in the main-sample trend specification (p = 0.075). Including that level in a change equation therefore needs additional justification. It does not mechanically undo time-varying currency conversion.
 4. In the common-sample USD ECM, the FDI coefficient remains small and insignificant after adding lagged expenditure and investment changes. The two-lag Breusch-Godfrey test still rejects no serial correlation for the baseline and both lag variants. Adding lags is not a demonstrated solution to the diagnostic failure.
 5. Replacing the FDI level with its first difference changes the question being estimated. The script reports this comparison explicitly; it should not be selected simply because its p-values or diagnostics look preferable. The common-sample CAD change equation with differenced FDI still rejects no serial correlation at 5%.
 
 The supplementary common-sample models do not exactly reproduce the original 37-observation baseline because they deliberately hold the estimation years fixed when comparing lag structures. Their output is separate from the paper's reported results.
+
+## Extended Working Paper November 2026
+
+The new full draft and its editable Word version are in `paper/`. Its self-contained replication source is in [`extended/`](../extended/README.md), including data, figures, a manuscript source, and numerical outputs. Run `python extended/analysis.py` from the repository root after installing `extended/requirements.txt`.
+
+The extension reports four explicit research questions and adds test-setting sensitivity, interaction marginal associations, HAC bandwidth comparisons, and leave-one-out coefficient influence. The main-sample CAD cointegration p-value changes from 0.382 under default AIC to 0.023 when the search is capped at three lags and BIC is used. The extended USD and CAD tests also change their conclusions. Both the search maximum and information criterion change together; this is not an isolated test of the criterion alone.
+
+The extended USD change equation with differenced FDI yields about 0.146 (p = 0.031), while the corresponding CAD value is about 0.173 (p = 0.062). These measure associations with changes in inflows, not the inflow levels in the baseline ECM. The full draft reports them without treating one significant alternative as a preferred causal specification. Residual serial correlation and other limitations remain documented.
 
 ## Remaining research work
 
@@ -43,7 +51,7 @@ The supplementary common-sample models do not exactly reproduce the original 37-
 - Assess sensitivity to large FDI episodes, structural instability, and the full-sample HP filter. The processed CSVs alone do not permit a faithful one-sided reconstruction of the original real-GDP filter.
 - Clarify the implications of expenditure containing investment and distinguish conditioning on demand from estimating a total effect of FDI. Alternative demand measures require their own economic justification.
 - Preserve causal restraint unless a credible identification strategy and suitable data are available. A negative coefficient, HAC errors, or cointegration alone does not identify displacement.
-- Update the paper, notebook, tables, and figures together once a justified specification is settled. The current PDF includes the subsequent prose revision; it does not incorporate the supplementary audit as new paper estimates.
+- Update the paper, notebook, tables, and figures together once a justified specification is settled. The shorter PDF retains the earlier prose revision and original tables. The Extended Working Paper incorporates and extends the diagnostics, with its own analysis and outputs.
 
 ## Reproducibility and assistance
 

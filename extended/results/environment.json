@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "statsmodels": "0.15.0",
+  "scipy": "1.17.0",
+  "data_sha256": {
+    "fdi_data_1981_2018.csv": "6d24fb73ac36496c871ec63cc21ead6aa6c1d3970f0f5f0c61a3cb9f486742a3",
+    "fdi_data_1981_2024.csv": "d40737e616922ff2fc875321bb3b4eeea0336f4edf8112b1cfd1bd7779ebb414"
+  },
+  "matplotlib": "3.10.8"
+}

@@ -1,14 +1,16 @@
-# Does FDI Stimulate Business Investment in Canada? (1981–2018)
+# Foreign Direct Investment and Business Investment in Canada
 
-Code and archived data for *Foreign Direct Investment and Business Investment in Canada* (Porokmi Sambahamphe, revised 2026).
+Research papers, code, and archived data for *Foreign Direct Investment and Business Investment in Canada* (Porokmi Sambahamphe, revised 2026). The main sample is 1981–2018, with an extension through 2024.
 
 ## Project history and current status
 
 This project began as an undergraduate research paper in 2019. I revisited it in 2026 to strengthen my empirical research skills and develop it further for my research portfolio. The revision reconstructs the dataset, moves the analysis from EViews to Python, introduces unit-root and cointegration tests, and reassesses the interpretation of the original results.
 
-The linked paper is the current revised draft. The [original undergraduate paper](archive/2019/Sambahamphe_FDI_Canada_2019.pdf) is preserved in the [2019 archive](archive/2019/README.md). The findings are descriptive and sensitive to specification; this project does not identify a causal effect of FDI. See [the revision notes](docs/REVISION_NOTES.md) for the remaining methodological questions and supplementary checks.
+The **Extended Working Paper** is the latest full research draft, with explicit research questions, a literature review, an economic framework, and expanded diagnostics. The shorter revised paper is retained as a concise version. The [original undergraduate paper](archive/2019/Sambahamphe_FDI_Canada_2019.pdf) is preserved in the [2019 archive](archive/2019/README.md). The findings are descriptive and sensitive to specification; this project does not identify a causal effect of FDI. See [the revision notes](docs/REVISION_NOTES.md) for the remaining methodological questions and supplementary checks.
 
-📄 **[Read the paper](paper/Sambahamphe_FDI_Canada.pdf)** · 📓 **[Open the notebook](FDI_Canada.ipynb)**
+📄 **[Extended Working Paper — PDF](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.pdf)** · **[Word](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.docx)**
+
+[Shorter paper](paper/Sambahamphe_FDI_Canada.pdf) · [Baseline notebook](FDI_Canada.ipynb) · [Extended analysis and results](extended/) · [Download replication package](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper_Replication.zip)
 
 ![FDI coefficient across specifications](figures/figure2_fdi_coefficients.png)
 
@@ -22,6 +24,14 @@ Foreign direct investment can finance new plants, equipment and technology, but 
 - **The main US-dollar sample supports cointegration between investment and expenditure** (Engle–Granger p = 0.002): the estimated adjustment coefficient corresponds to about 37% of the previous year's deviation being corrected within a year, conditional on the model (error-correction term −0.369, p = 0.019).
 - **The sign depends on currency:** Canadian-dollar change equations give a negative association of about −0.107 to −0.108 (p < 0.001), even with an exchange-rate control. Currency conversion behaves as a specification change, not a simple rescaling.
 - **No robust evidence of a positive FDI association; the estimates do not establish a causal increase or decrease in investment.** FDI measures financial inflows, which can include acquisitions of existing assets, and the main ECM retains residual serial correlation (Breusch–Godfrey p = 0.001).
+
+### What the extended analysis adds
+
+The Extended Working Paper reports four research questions and adds currency-specific unit-root checks, a capped BIC test configuration, common-sample dynamic comparisons, marginal associations from the capacity interaction, HAC bandwidth sensitivity, and coefficient-influence checks.
+
+- Main USD cointegration evidence is stable across the two tested settings. CAD and extended-sample test conclusions change when both the lag-search maximum and selection criterion change; the default AIC results alone are not definitive.
+- The extended-sample USD change equation using **changes in FDI** gives a positive coefficient of about 0.146 (p = 0.031). This estimates a different parameter from the baseline FDI-level model and is reported alongside the other results.
+- Serial correlation remains in important specifications. The extended paper estimates conditional associations and does not identify a causal effect.
 
 ## Methods
 
@@ -67,11 +77,24 @@ The notebook writes figures to `figures/` and tables to `tables/`. See [the data
 
 Supplementary specification checks: `python src/specification_audit.py`. These use the archived CSVs and write separate outputs to `tables/audit/`; they do not overwrite the paper's original tables. Models within each sample/currency comparison use common observations, so their coefficients need not match the paper's 37-observation baseline.
 
+### Reproduce the Extended Working Paper
+
+The self-contained [`extended/`](extended/) folder includes its analysis script, archived inputs, manuscript source, figures, results, and recorded software versions. From the repository root, use a separate Python environment for its pinned dependencies:
+
+```sh
+python -m pip install -r extended/requirements.txt
+python extended/analysis.py
+```
+
+Outputs go to `extended/results/` and `extended/figures/`. They are separate from the shorter paper’s notebook exports and the earlier audit.
+
 ## Repository
 
 | Location | Contents |
 |---|---|
-| [Current paper](paper/Sambahamphe_FDI_Canada.pdf) | Revised research paper |
+| [Extended Working Paper](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.pdf) | Latest full draft; editable Word and downloadable replication files in `paper/` |
+| [Extended analysis](extended/) | Self-contained data, code, manuscript, figures, and results |
+| [Shorter paper](paper/Sambahamphe_FDI_Canada.pdf) | Concise revised paper |
 | [Notebook](FDI_Canada.ipynb) | Main analysis and exports |
 | [Original paper](archive/2019/) | Unchanged 2019 undergraduate paper and archive notes |
 | [Data](data/) | Saved datasets and variable definitions |
