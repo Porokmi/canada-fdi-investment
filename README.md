@@ -4,7 +4,7 @@ Code and archived data for *Foreign Direct Investment and Business Investment in
 
 ## Project history and current status
 
-This project began as an undergraduate research paper in 2019. I revisited it in 2026 while preparing writing samples for my portfolio. The revision reconstructs the dataset, moves the analysis from EViews to Python, examines unit roots and cointegration, and reassesses the interpretation of the original levels regression. It is a revision of that earlier project, rather than a wholly new study.
+This project began as an undergraduate research paper in 2019. I revisited it in 2026 to strengthen my empirical research skills and develop it further for my research portfolio. The revision reconstructs the dataset, moves the analysis from EViews to Python, examines unit roots and cointegration, and reassesses the interpretation of the original levels regression. It is a revision of that earlier project, rather than a wholly new study.
 
 The linked paper is the current revised draft. The original 2019 paper is not currently archived in this repository. The findings are descriptive and sensitive to specification; this project does not identify a causal effect of FDI. See [the revision notes](docs/REVISION_NOTES.md) for the remaining methodological questions and supplementary checks.
 📄 **[Read the paper](paper/Sambahamphe_FDI_Canada.pdf)** · 📓 **[Open the notebook](FDI_Canada.ipynb)**
