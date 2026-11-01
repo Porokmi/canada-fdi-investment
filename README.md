@@ -8,9 +8,9 @@ This project began as an undergraduate research paper in 2019. I revisited it in
 
 The **Extended Working Paper** is the latest full research draft, with explicit research questions, a literature review, an economic framework, and expanded diagnostics. The shorter revised paper is retained as a concise version. The [original undergraduate paper](archive/2019/Sambahamphe_FDI_Canada_2019.pdf) is preserved in the [2019 archive](archive/2019/README.md). The findings are descriptive and sensitive to specification; this project does not identify a causal effect of FDI. See [the revision notes](docs/REVISION_NOTES.md) for the remaining methodological questions and supplementary checks.
 
-📄 **[Extended Working Paper — PDF](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.pdf)** · **[Word](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.docx)**
+📄 **[Extended Working Paper — PDF](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.pdf)**
 
-[Shorter paper](paper/Sambahamphe_FDI_Canada.pdf) · [Baseline notebook](FDI_Canada.ipynb) · [Extended analysis and results](extended/) · [Download replication package](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper_Replication.zip)
+[Shorter paper](paper/Sambahamphe_FDI_Canada.pdf) · [Baseline notebook](FDI_Canada.ipynb) · [Extended analysis and results](extended/)
 
 ![FDI coefficient across specifications](figures/figure2_fdi_coefficients.png)
 
@@ -92,7 +92,7 @@ Outputs go to `extended/results/` and `extended/figures/`. They are separate fro
 
 | Location | Contents |
 |---|---|
-| [Extended Working Paper](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.pdf) | Latest full draft; editable Word and downloadable replication files in `paper/` |
+| [Extended Working Paper](paper/Sambahamphe_FDI_Canada_Extended_Working_Paper.pdf) | Latest full draft in PDF format |
 | [Extended analysis](extended/) | Self-contained data, code, manuscript, figures, and results |
 | [Shorter paper](paper/Sambahamphe_FDI_Canada.pdf) | Concise revised paper |
 | [Notebook](FDI_Canada.ipynb) | Main analysis and exports |

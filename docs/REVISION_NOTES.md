@@ -38,7 +38,7 @@ The supplementary common-sample models do not exactly reproduce the original 37-
 
 ## Extended Working Paper November 2026
 
-The new full draft and its editable Word version are in `paper/`. Its self-contained replication source is in [`extended/`](../extended/README.md), including data, figures, a manuscript source, and numerical outputs. Run `python extended/analysis.py` from the repository root after installing `extended/requirements.txt`.
+The new full draft is available as a PDF in `paper/`. Its self-contained replication source is in [`extended/`](../extended/README.md), including data, figures, a manuscript source, and numerical outputs. Run `python extended/analysis.py` from the repository root after installing `extended/requirements.txt`.
 
 The extension reports four explicit research questions and adds test-setting sensitivity, interaction marginal associations, HAC bandwidth comparisons, and leave-one-out coefficient influence. The main-sample CAD cointegration p-value changes from 0.382 under default AIC to 0.023 when the search is capped at three lags and BIC is used. The extended USD and CAD tests also change their conclusions. Both the search maximum and information criterion change together; this is not an isolated test of the criterion alone.
 
