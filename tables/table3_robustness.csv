@@ -1,0 +1,7 @@
+Specification,N,Coint. p,FDI coef.,FDI p,FDI x U
+"ECM, US$ (main)",37,0.002,0.027,0.615,-
+ECM + FDI x U,37,0.002,0.071,0.356,0.003 (p=0.267)
+"ECM, C$",37,0.382,-0.071,0.009,-
+"ECM, US$ to 2024 + 2020",43,0.358,0.032,0.548,-
+"First differences, C$",37,0.382,-0.107,<0.001,-
+"First diff., C$ + exch. rate",37,0.382,-0.108,<0.001,-
