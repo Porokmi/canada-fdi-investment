@@ -107,4 +107,4 @@ Both scripts read only the archived CSVs. `--online` adds the comparisons with c
 
 ## AI disclosure
 
-AI assistance was used for coding, econometric discussion, source discovery, drafting, editing, and document preparation. The research question and the original undergraduate project are the author's. The calculations in this package were executed on the archived data, but execution and internal consistency do not independently validate source measurement or causal assumptions. The author remains responsible for understanding the analysis, checking the cited sources, and deciding how the draft is used.
+AI assistance was used for coding, econometric discussion, source discovery and editing.
