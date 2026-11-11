@@ -1,0 +1,53 @@
+COINTEGRATION
+ end currency   selection      stat        p
+2018      usd default AIC -4.328432 0.002311
+2018      usd    max3 BIC -4.328432 0.002311
+2018      cad default AIC -2.282982 0.382075
+2018      cad    max3 BIC -3.619434 0.023177
+2024      usd default AIC -2.331475 0.357957
+2024      usd    max3 BIC -4.958054 0.000196
+2024      cad default AIC -2.472728 0.291227
+2024      cad    max3 BIC -4.171002 0.004035
+MAIN TERMS
+                 model currency term  coefficient        p  n     bg_p
+                   ECM      usd  FDI     0.027305 0.614712 37 0.001036
+                   ECM      usd  ECT    -0.368647 0.019262 37 0.001036
+      Change level FDI      usd  FDI     0.000804 0.989346 37 0.012911
+   Change level FDI FX      usd  FDI    -0.000576 0.990661 37 0.011759
+Change differenced FDI      usd dFDI     0.112760 0.062313 37 0.219650
+                   ECM      cad  FDI    -0.071022 0.009096 37 0.006886
+                   ECM      cad  ECT    -0.190734 0.042867 37 0.006886
+      Change level FDI      cad  FDI    -0.106855 0.000585 37 0.025157
+   Change level FDI FX      cad  FDI    -0.107609 0.000368 37 0.022804
+Change differenced FDI      cad dFDI     0.079771 0.258262 37 0.032848
+                   OLS      usd  FDI     0.123823 0.156325 38      NaN
+                   AR1      usd  FDI     0.053241 0.404947 37      NaN
+           Interaction      usd  FDI     0.071154 0.356147 37 0.002727
+           Interaction      usd  ECT    -0.361023 0.026269 37 0.002727
+ADF SENSITIVITY
+currency variable   selection        p  lags
+     usd        I default AIC 0.135719     7
+     usd        I    max3 BIC 0.450781     1
+     usd        Y default AIC 0.061063     8
+     usd        Y    max3 BIC 0.554541     1
+     usd        U default AIC 0.029491     8
+     usd        U    max3 BIC 0.015701     1
+     usd      FDI default AIC 0.000216     2
+     usd      FDI    max3 BIC 0.000216     2
+     usd       fx default AIC 0.075399     8
+     usd       fx    max3 BIC 0.335190     1
+     cad        I default AIC 0.542801     1
+     cad        I    max3 BIC 0.551633     0
+     cad        Y default AIC 0.969604     0
+     cad        Y    max3 BIC 0.969604     0
+     cad        U default AIC 0.009987     8
+     cad        U    max3 BIC 0.028920     1
+     cad      FDI default AIC 0.000036     2
+     cad      FDI    max3 BIC 0.000036     2
+     cad       fx default AIC 0.075399     8
+     cad       fx    max3 BIC 0.335190     1
+LOO
+               min       max
+currency                    
+cad      -0.131036 -0.071438
+usd      -0.000944  0.045166
