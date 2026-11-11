@@ -1,0 +1,375 @@
+@KEEP 0-7
+This extended working paper examines the conditional relationship between foreign direct investment net inflows and business gross fixed capital formation in Canada, using 38 annual observations for 1981–2018 and an extension through 2024. It reconstructs an earlier undergraduate study that measured all series in US dollars and interpreted a positive FDI coefficient as evidence that foreign and domestic investment are complements. Canadian dollars are the primary unit here, because converting at a time-varying exchange rate adds a revaluation component to annual changes. In a baseline change equation that allows FDI to enter with a one-year lag, the sum of the current and lagged FDI coefficients is −0.130 (95 percent interval −0.188 to −0.073): higher inflows are associated with lower investment changes over the current and following year, conditional on expenditure and estimated capacity slack. The association is negative in every Canadian-dollar specification examined and robust to Statistics Canada's own FDI series, single-year omissions and additional short-run dynamics, but it is sensitive to how trends and expenditure are modelled: with a linear trend and total expenditure as the control, the sum is −0.050 and not statistically significant. An exact algebraic bridge between the two currency specifications attributes most of the difference from the near-zero US-dollar estimates to exchange-rate revaluation. Capacity slack shifts the timing of the FDI association but not, detectably, its combined size. The evidence does not identify displacement of domestic investment. The contribution is a transparent reconstruction and reassessment of the earlier study, with explicit attention to measurement, timing, currency and specification sensitivity.
+
+Keywords: foreign direct investment; business investment; Canada; currency denomination; cointegration; specification sensitivity.
+
+@KEEP 10-11
+This revision (November 2026) responds to reviewer feedback on the first version of the working paper. It adopts Canadian dollars as the primary unit of measurement, allows FDI to enter with a one-year lag, adds an exact bridge between the US-dollar and Canadian-dollar specifications, and checks the results against Statistics Canada's own FDI series.
+
+@KEEP 12-13
+@TOC
+@KEEP 28-28
+# 1 Introduction and research questions
+
+The relationship between foreign direct investment and domestic capital formation matters for Canadian investment policy. Under the Investment Canada Act, acquisitions subject to net-benefit review are assessed for their likely benefit to Canada. The relevant factors include effects on economic activity, employment and productivity (Investment Canada Act, ss. 20–21). At the same time, weak business investment has been a recurring concern in Canadian economic policy discussion. Rogers (2024), for example, identifies persistent weakness in capital spending and investment per worker as a central productivity concern. Whether foreign direct investment adds to business capital formation is therefore not only an academic question: it bears on how inflows are assessed when they arrive.
+
+The difficulty is that a recorded FDI inflow and an addition to the capital stock are different economic objects. A new foreign-owned plant is fixed investment. The purchase of an existing firm is an international financial transaction that may add little to fixed assets in the year it occurs. The Canadian data make the gap visible. In the archived World Bank-based series, annual FDI inflows peaked at about C$129 billion in 2007, equivalent to about 42 percent of business gross fixed capital formation that year (author's calculations). Statistics Canada's contemporary account identifies cross-border mergers and acquisitions as the main driver of that year's inward FDI, with fourth-quarter flows concentrated in energy and metallic minerals (Statistics Canada 2008). The historical release supports the acquisition context; it is not the source of the C$129 billion estimate, which uses a different data vintage and series construction. Inflows then fell by more than four-fifths within two years. Business investment moved far less (Figure 1). An aggregate regression of investment on FDI must contend with this mismatch between what is measured and what is meant.
+
+This paper reconstructs and extends my undergraduate study, a Fall 2019 term paper. It regressed business investment on expenditure, capacity slack and FDI, all measured in US dollars, found a positive FDI coefficient, and read it as evidence that foreign and domestic investment are complements. Reconstructing the data produces a sharper puzzle. In US dollars, the FDI coefficient in an equation for investment changes is essentially zero (0.001). In Canadian dollars, using the same underlying data, it is −0.107 and highly significant. The economy, sample and regression form are the same, but time-varying currency conversion changes the movements being modelled.
+
+Canadian dollars are the primary unit because the question concerns nominal business capital formation within Canada. Converting these series into US dollars at a changing exchange rate introduces a revaluation component into annual changes. A decomposition of the archived series illustrates its potential importance. In 2015, investment declined by about C$15 billion, while its US-dollar value declined by approximately US$62 billion. About US$51 billion of that decline is exchange-rate revaluation, as the Canadian dollar depreciated from 1.105 to 1.279 per US dollar. This component does not itself represent additional or cancelled investment spending, although exchange rates may also influence investment decisions. Canadian-dollar measurement removes this conversion component; it does not remove inflation. The analysis therefore concerns changes in nominal investment, rather than changes in the volume of capital formation.
+
+I study the relationship using 38 annual observations for 1981–2018, with an extension through 2024. The outcome is business gross fixed capital formation located in Canada, including investment by foreign-owned firms. The explanatory variable of interest is FDI net inflows, conditioned on aggregate expenditure and an estimated capacity-slack measure.
+
+The reported estimates support three findings. First, the baseline Canadian-dollar specification gives a negative conditional FDI association, with sensitivity to specification. The sum of the contemporaneous and lagged coefficients is −0.130, with a 95 percent interval of [−0.188, −0.073]. It remains negative when expenditure excludes business investment (−0.135), when individual observations are omitted, when lagged investment and expenditure changes are added, when the World Bank FDI series is replaced by Statistics Canada's native-C$ direct investment liabilities (−0.131) or its directional inward-FDI series over 1991–2018 (−0.146), and in exploratory specifications with downturn-year indicators (Appendix D). However, adding a linear trend with total expenditure as the control reduces the sum to −0.050, with an interval including zero. Some error-correction and extended-sample estimates are also imprecise. The lagged coefficient is larger in magnitude than the contemporaneous coefficient, but the baseline test of its exclusion gives p = 0.089. Evidence about the timing is therefore weaker than evidence against a zero coefficient sum in that specification.
+
+Second, currency measurement materially changes the magnitude of the estimated association. An exact bridge moves the baseline FDI coefficient sum from −0.025 in US dollars to −0.130 in Canadian dollars. Averaging over all 120 orders of the five specified adjustments, replacing exchange-rate-revalued changes with Canadian-dollar changes contributes −0.096 of the total movement of approximately −0.105, and between −0.084 and −0.108 in every order. The remaining adjustments have smaller average contributions. Within this specified decomposition, revaluation in the differenced variables therefore accounts for most of the currency-related movement. This is an accounting attribution, conditional on the adjustments and their grouping, rather than a causal explanation or a decomposition of sampling uncertainty.
+
+Third, capacity conditions are associated with changes in the estimated timing pattern, but not with a detectable change in the combined association, and the evidence is sensitive to influential years. In the timing-aligned model, the interaction terms are jointly significant with either expenditure control (p < 0.001), with a positive contemporaneous interaction and a negative lagged interaction. Greater current slack is therefore associated with a more positive contemporaneous FDI coefficient and a more negative lagged coefficient. The sum of the two interaction coefficients, which measures whether slack changes the combined association, is −0.060 with total expenditure (95 percent interval [−0.136, 0.015], p = 0.116) and −0.066 with expenditure excluding business investment (p = 0.231). Adding indicators for 2001 and 2009 weakens the joint evidence. These results suggest an exploratory change in the timing pattern; they provide no evidence that slack strengthens or weakens the combined FDI association.
+
+These results describe conditional associations. They do not establish that foreign investment displaces domestic investment. Acquisitions followed by changes in capital spending and inflows concentrated late in an investment upswing are possible explanations for a negative association, but the aggregate data cannot distinguish these mechanisms. Transaction- and ownership-level data would be needed to investigate them.
+
+## 1.1 Research questions
+
+**RQ1.** Are annual FDI net inflows associated with annual changes in nominal business investment in Canada after conditioning on expenditure and estimated capacity slack? I report contemporaneous and lagged coefficients and their sum, and test the timing restrictions implicit in earlier specifications.
+
+**RQ2.** Is there evidence of a cointegrating relationship between business investment and expenditure? Is that conclusion stable across currency, sample endpoint, lag-selection settings, and the definition of expenditure? The evidence informs the use of error-correction specifications, alongside integration-order and dynamic-specification checks.
+
+**RQ3.** Does the conditional FDI association depend on available capacity?
+
+**RQ4.** Why do the Canadian-dollar and US-dollar specifications produce different estimates? I answer this through an exact bridge between the two specifications rather than by listing alternative estimates.
+
+## 1.2 Scope
+
+The study is descriptive. It estimates conditional associations and introduces no instrument, policy discontinuity or other source of plausibly exogenous variation in inflows. Three features of the data limit what any coefficient here can mean. FDI is a balance-of-payments financial flow, not foreign-owned fixed investment. The investment series does not separate domestic from foreign owners. Annual aggregate data cannot distinguish greenfield entry from acquisitions. A negative coefficient is therefore not evidence that foreign investment displaces domestic investment, and a coefficient below one is not evidence of displacement either (Section 3.2).
+
+The project's contribution is a transparent reconstruction of an earlier study, with the specification choices that drive its conclusions isolated and tested rather than catalogued. The undergraduate paper and its EViews output are preserved separately (Appendix C).
+
+@KEEP 46-69
+## 3.3 Conditional associations and the composition of expenditure
+
+Including expenditure changes the question in two ways.
+
+*Behavioural.* If FDI raises investment partly by expanding demand, conditioning on expenditure removes part of that pathway. If expected growth both attracts foreign investors and raises expenditure, the control removes one source of confounding. A regression coefficient cannot distinguish these, and the control does not make the remaining FDI variation exogenous.
+
+*Accounting.* Gross national expenditure contains business investment: Y = I + N, where N is all other expenditure (consumption, government spending, residential and non-business investment). Holding Y fixed while I varies therefore implies an equal and opposite movement in N. The conditional FDI coefficient in a regression that controls for Y describes how FDI covaries with the composition of expenditure between business investment and everything else, not with business investment holding demand fixed.
+
+The same structure applies to any long-run regression of I on Y (Section 5.5). Any cointegrating relation must be interpreted with this accounting overlap in mind. It does not automatically establish a stable investment share or an independent demand relationship. Moreover, replacing Y with N = Y − I is an invertible linear transformation of the pair (I, Y). It therefore does not provide independent population evidence of cointegration, although finite-sample residual-based test results may differ.
+
+To make the estimand explicit, I re-estimate the main specifications with expenditure net of business investment, N = Y − I, in place of Y, on identical observations. Netting out I does not resolve simultaneity, since N and I are jointly determined. It does show whether the FDI results depend on conditioning on an aggregate that contains the outcome. Both series are available in each currency in the archived data, so the comparison requires no new sources.
+
+## 3.4 Hypotheses and interpretation rules
+
+For RQ1, the null hypothesis is that the FDI coefficient sum δ_{0} + δ_{1} in the baseline change equation is zero. A precisely estimated nonzero sum would describe a conditional association within the specified equation; it would not, by itself, establish a causal investment response. Failure to reject the null is compatible with zero or with economically relevant values that the sample estimates imprecisely. The timing restrictions implicit in earlier specifications are tested separately (Section 5.5).
+
+For RQ2, the test null is no cointegration between investment and expenditure. Rejection supports an error-correction interpretation under the maintained integration and deterministic specifications. Sensitivity to lag-selection settings weakens a claim that the long-run relationship is an invariant feature of the data.
+
+For RQ3, two nulls are distinguished: that neither FDI slope varies with slack (η_{0} = η_{1} = 0), and that the coefficient sum does not vary with slack (η_{0} + η_{1} = 0). The hypothesis that FDI is more strongly associated with investment where spare capacity is available predicts a positive η_{0} + η_{1}. Marginal associations must combine the FDI coefficients with their interactions at a stated slack value.
+
+For RQ4, I report stability rather than define success as repeated rejection of a null. The currency comparison is answered by an exact algebraic bridge, which attributes the difference between the currency specifications to identified transformations. The other comparisons distinguish changes in the estimand, such as the FDI timing restriction or the definition of expenditure, from changes in the sample and from adjustments to the standard-error estimator.
+
+@KEEP 78-101
+In the main sample, business investment averages about C$211.7 billion, compared with C$32.0 billion for annual FDI inflows. FDI has a standard deviation about as large as its mean and reaches approximately C$129.4 billion in 2007. The large variation cautions against describing a single year as representative. Investment and expenditure also rise substantially in nominal terms over the sample, motivating formal consideration of their time-series properties.
+
+@KEEP 103-103
+@FIG 1 extended/output/figures/figure1_series_cad.png
+NOTE: 1981–2018. Upper panel: current C$ billions. Lower panel: actual output relative to estimated potential. Source: archived data and author calculations.
+@KEEP 106-107
+The archived files are sufficient to reproduce the estimation stage. They do not include a recorded original retrieval date or all raw source inputs. Downloading current values can alter the result through data revisions and the full-series capacity filter. The analysis therefore separates reproducing the archived analysis, which uses only the archived files, from comparisons with current source releases, which are reported separately (Sections 5.1 and 5.7, Appendix E).
+
+@KEEP 109-109
+# 5 Empirical strategy
+
+The analysis uses a baseline Canadian-dollar change equation (Section 5.5) and reports alternative specifications addressing currency measurement, deterministic terms, expenditure composition and dynamics. These specifications were developed during the revision; they are not described as prospectively pre-specified. The selected downturn-year indicators were added after inspecting the data and are treated as exploratory (Appendix D). Model choices are justified by the research question and statistical assumptions, rather than by the significance of FDI.
+
+## 5.1 Currency of measurement
+
+All primary estimates are in Canadian dollars.
+
+*Native units.* Statistics Canada records business investment in Canadian dollars.
+
+*Expenditure.* The World Bank publishes gross national expenditure in both local currency (NE.DAB.TOTL.CN) and current US dollars (NE.DAB.TOTL.CD). For Canada over 1981–2018, the ratio of the two equals the annual average official exchange rate (PA.NUS.FCRF) used in this study to within 0.002. Multiplying the US-dollar series by that rate recovers the local-currency series to within 0.14 percent.
+
+*FDI.* The World Bank indicator BX.KLT.DINV.CD.WD is published in current US dollars and draws on the IMF Balance of Payments database, supplemented by UNCTAD and official national sources (World Bank n.d.). I express it in Canadian dollars using the annual average official exchange rate. The resulting series closely tracks Statistics Canada's direct investment liabilities in Table 36-10-0471-01, but it is not interchangeable with the directional inward-FDI measure in Tables 36-10-0025-01 and 36-10-0442-01; the distinction concerns the classification of reverse investment (Statistics Canada 2015). The comparison does not identify the IMF's original conversion frequency or independently validate the archived study vintage. Re-estimating the baseline equation with either Statistics Canada series leaves the coefficient sum essentially unchanged (Section 7.3; Appendix E).
+
+*Revaluation in US dollars.* Converting to US dollars at a time-varying rate adds a revaluation term to every first difference, as in equation (3). That term captures mechanical exchange-rate revaluation. Write the US-dollar change as ΔI^{USD} = A + R, where A is the Canadian-dollar spending change converted at the current rate and R is revaluation. Over 1982–2018, Var(A) is 34 percent of Var(ΔI^{USD}), Var(R) is 31 percent, and 2Cov(A, R) is 35 percent. The correlation between A and R is 0.53, so the revaluation term cannot be read as a separable share of variation. In a regression with an intercept, A accounts statistically for about 78 percent of the sample variation in ΔI^{USD} (R² = 0.778). The remaining 22 percent is the variance share of the component of R orthogonal to A in that regression. It is not the total importance of revaluation, since A and R are correlated.
+
+*Role of US dollars.* US-dollar estimates are retained as the units of the original study, and are compared with the primary estimates through an exact bridge (Section 5.6).
+
+## 5.2 Benchmark: the original levels specification
+
+The undergraduate study estimated, in US dollars,
+
+EQ: I_{t} = α + βY_{t} + γU_{t} + δFDI_{t} + ε_{t}.  (6)
+
+I re-estimate equation (6) by OLS and with AR(1) errors (iterative GLSAR), in both currencies, as a benchmark linking the reconstruction to the original study. The AR(1) model addresses residual persistence under its error specification. It does not make integrated series stationary, establish cointegration, or identify an exogenous inflow shock. The levels coefficient is a static association between trending nominal series. It is not comparable in horizon to the short-run coefficients of Section 5.5.
+
+## 5.3 Stationarity and deterministic terms
+
+ADF tests examine a unit-root null. Lag length is selected by AIC with the software default maximum. A comparison caps the search at three lags and uses BIC. Both settings change in that comparison, so their separate contributions are not identified.
+
+The deterministic terms in each test are chosen to match how the variable enters the estimated equation. Rejecting a unit root around a linear trend does not establish stationarity around a constant, and the baseline equation contains no trend. For I and Y, levels tests include a constant and trend, and first-difference tests a constant. For FDI and U, which enter the baseline equation in levels, I report tests with a constant only alongside the trend version, plus a regression of each variable on a linear trend.
+
+In Canadian dollars, I and Y do not reject a unit root in levels (p = 0.54 and 0.97 with trend), and reject it in first differences (p < 0.001). The baseline equation is therefore specified in their first differences. Slack U rejects a unit root with or without a trend (p = 0.004 with a constant only; p = 0.010 with a trend). FDI rejects a unit root only around a trend (p < 0.001), not around a constant (p = 0.849), and rises by about C$1.8 billion per year (p < 0.001).
+
+Entering FDI in levels in a trend-free equation therefore imposes the restriction that its trend is offset by other terms. The trend may partly reflect nominal growth of the economy, but that possibility does not remove the need to justify the trend-free equation. The baseline omits the trend as a presentation choice, and the trend specification is reported alongside it in the main results (Table 6). That comparison is not evidence that either specification is statistically superior: ADF outcomes alone do not settle the appropriate deterministic specification in this small sample.
+
+## 5.4 Sample, units and inference
+
+The main dataset contains 38 annual observations for 1981–2018. Differencing and the one-year FDI lag leave 37 observations for the baseline equation, covering 1982–2018. The extension through 2024 provides 43 usable observations. Specifications that add lagged changes in investment and expenditure lose one further year: they use a common 1983–2018 sample of 36 observations, and the baseline is re-estimated on that sample for comparison.
+
+Monetary variables are measured in current-price billions of Canadian dollars. ΔI is an annual change in the nominal investment level, not a percentage growth rate. U is potential minus actual output valued at nominal GDP, in billions; S is the same gap in percent of potential.
+
+Change and error-correction equations use Newey–West HAC standard errors with three lags, Bartlett weights and normal-reference inference. Levels benchmarks use conventional standard errors. HAC estimation addresses error dependence for inference. It does not correct omitted dynamics or endogenous regressors, which the residual diagnostics assess directly.
+
+## 5.5 Baseline model: change equation with unrestricted FDI timing
+
+In Canadian dollars, the Engle–Granger test of investment and expenditure does not reject the null of no cointegration under the default lag search (p = 0.382). It does reject under the capped BIC search (p = 0.023). The same pattern holds with N in place of Y (p = 0.394 and 0.024) and in the extended sample. Because the evidence is sensitive to lag-selection settings, I use a change equation as the baseline rather than assume a well-established long-run relation. The ECM is retained as a sensitivity analysis. Its interpretation requires a credible cointegrating relation and an adequate dynamic specification; one significant test alone does not establish validity.
+
+The baseline equation estimates both current and one-year-lagged FDI coefficients. Timing is unrestricted within this two-term specification, rather than over all possible lags:
+
+EQ: ΔI_{t} = κ + θΔX_{t} + γU_{t} + δ_{0}FDI_{t} + δ_{1}FDI_{t−1} + e_{t},  (7)
+
+where X is expenditure (Y in the baseline specification; N = Y − I in the compositional check of Section 3.3). Earlier versions of this analysis compared an equation with FDI in levels to one with FDI in first differences, and contrasted their signs. Equation (7) nests both:
+
+EQ: Levels form: H_{0}: δ_{1} = 0.   Differences form: H_{0}: δ_{0} + δ_{1} = 0.  (8)
+
+Under the differences restriction, δ_{0}FDI_{t} + δ_{1}FDI_{t−1} = δ_{0}ΔFDI_{t}. I test each restriction with a Wald test using the HAC covariance. These tests assess whether the restricted forms adequately represent the encompassing equation. Failure to reject a restriction is not evidence that it is true, especially with this sample size. I report the contemporaneous association δ_{0}, the lagged association δ_{1}, and the FDI coefficient sum δ_{0} + δ_{1} with a 95 percent interval.
+
+For a one-year C$1 billion increase in FDI, holding the paths of expenditure changes and slack fixed, the coefficient sum describes the combined association with ΔI in that year and the following year. Equivalently, it describes the resulting investment-level difference after the second year under this equation. A sustained increase in annual FDI has a different implication: after the first year, the coefficient sum applies to each annual investment change. These are model-implied conditional comparisons, not causal responses.
+
+Where the error-correction variant is estimated, ECT_{t−1} from the regression I_{t} = a + bX_{t} + v_{t} is added to equation (7). When the adjustment process is stable, −(δ_{0} + δ_{1})/λ describes the eventual displacement of the investment level from its baseline path for a sustained increase in the annual FDI flow, holding the expenditure and slack paths fixed. The coefficient sum in an ECM is not the full two-year dynamic response, because error correction also operates during that period.
+
+## 5.6 Bridging the Canadian-dollar and US-dollar specifications
+
+Let e_{t} denote Canadian dollars per US dollar. For monetary series related by Z_{t}^{USD} = Z_{t}^{CAD}/e_{t}, multiplication of a US-dollar equation by e_{t} yields an exact algebraic translation. Separately estimated equations with ordinary constants and unweighted residuals need not be equivalent. In the archived data the conversion identity holds exactly for every monetary series and year. For the two-term FDI specification, the exact translated equation is
+
+EQ: e_{t}ΔI_{t}^{USD} = κe_{t} + θe_{t}ΔX_{t}^{USD} + γU_{t}^{CAD} + δ_{0}FDI_{t}^{CAD} + δ_{1}(e_{t}/e_{t−1})FDI_{t−1}^{CAD} + e_{t}u_{t}.  (9)
+
+The lagged FDI term uses e_{t}/e_{t−1} because it was originally converted at the previous year's exchange rate. Weighted least squares with weights e_{t}^{−2}, and e_{t} replacing the ordinary constant, reproduces the US-dollar coefficients when all regressors and observations are translated consistently. In the archived data the translated equation returns a coefficient sum of −0.0251, identical to the directly estimated US-dollar equation. For any monetary series Z,
+
+EQ: e_{t}ΔZ_{t}^{USD} = ΔZ_{t}^{CAD} + (1 − e_{t}/e_{t−1})Z_{t−1}^{CAD}.  (10)
+
+The second term is the revaluation component in the translated change. The bridge compares the exact translation with equations that apply five adjustments: removing the weights (W); adding an ordinary constant (C); replacing translated changes with Canadian-dollar changes (V); replacing the exchange-rate-adjusted lagged FDI regressor with FDI_{t−1}^{CAD} (L); and removing e_{t} (E). Applying all five yields the Canadian-dollar baseline exactly.
+
+Because the attribution along any one sequence need not be invariant to its order, I estimate all 2⁵ = 32 combinations of adjustments and average each adjustment's contribution over all 120 orders (a Shapley decomposition). I also report the range of its contribution across orders. These ranges describe order sensitivity, not confidence intervals. The attribution is conditional on defining V as one joint adjustment to the investment and expenditure changes; splitting that adjustment could redistribute its contribution. Every design matrix in the decomposition is full rank, including the combinations without either intercept regressor, and the largest condition number across the 80 fitted combinations of the three bridges in Table 9 is 1,371 (Appendix B).
+
+## 5.7 Capacity interaction
+
+To align this exercise with the baseline timing specification, I estimate
+
+EQ: ΔI_{t} = κ + θΔX_{t} + γS_{t} + δ_{0}FDI_{t} + δ_{1}FDI_{t−1} + η_{0}(FDI_{t} × S_{t}) + η_{1}(FDI_{t−1} × S_{t}) + e_{t}.  (11)
+
+S_{t} is current-year proportional slack, defined as the negative of the HP output gap in percent of potential output. Positive values indicate output below potential. This formulation asks whether current capacity conditions moderate the associations of current and previous-year FDI with current investment changes. All component main effects are included. At S_{t} = s, the contemporaneous and lagged marginal associations are
+
+EQ: δ_{0} + η_{0}s  and  δ_{1} + η_{1}s.  (12)
+
+Their sum is a conditional coefficient sum at a common slack value; it is not automatically the response to a one-year inflow change when slack differs across years. I report intervals at the estimation-sample quartiles, a joint test of η_{0} = η_{1} = 0, and a test of η_{0} + η_{1} = 0, using Var(η_{0}) + Var(η_{1}) + 2Cov(η_{0}, η_{1}). With only 37 observations, imprecision must be interpreted explicitly. The contemporaneous-only interaction of earlier drafts is retained as a restricted comparison. The nominal-slack interaction is an additional comparison: multiplying FDI by slack valued at the nominal GDP scale permits the interaction to change with the economy's nominal size even at the same proportional output gap.
+
+The output gap is the cycle from a Hodrick–Prescott filter (λ = 100) applied to log real GDP in chained 2017 dollars from Statistics Canada Table 36-10-0222-01, using the full available series. The archived gap matches the current vintage (1981–2025) to within 0.024 percentage points. Ending the filter at 2018 instead changes the gap by at most 0.57 percentage points (in 2018), with a correlation of 0.998 over 1981–2018. A one-sided gap, computed for each year using only data up to that year, correlates only 0.47 with the full-sample gap over 1990–2018. The slack measure is therefore a retrospective estimate, as discussed in Section 4.3 and Hamilton (2017).
+
+## 5.8 Checks and diagnostics
+
+Each check below targets one threat to the baseline FDI estimate and is reported in full.
+
+CAP: Table 3 Checks and the threats they address
+@TABLE checks
+NOTE: All checks use the archived data except the Statistics Canada FDI series, which are current releases (Appendix E).
+Residual serial correlation is assessed with a two-lag Breusch–Godfrey test for every reported equation. HAC errors are not treated as a remedy for it. Failure to reject the test null does not establish independent residuals. Evidence of residual dependence prompts investigation of omitted dynamics. All coefficients remain descriptive regardless of the diagnostic outcome. No family-wise correction is applied. The checks are diagnostics of one baseline model, not independent confirmatory tests.
+
+# 6 Main results
+
+## 6.1 Time-series evidence
+
+CAP: Table 4 Levels ADF tests and lag sensitivity
+@KEEP 135-136
+In Canadian dollars, the main-sample levels tests fail to reject unit roots for investment and expenditure under both lag-selection settings (Table 4), and first-difference tests reject unit roots with p-values below 0.001. The same holds in US dollars, although the US-dollar expenditure p-value under the default setting (0.061) is close to a conventional threshold. These results support specifying the baseline equation in the first differences of investment and expenditure.
+
+FDI and slack reject the levels unit-root null around a linear trend in both currencies. As Section 5.3 explains, this does not establish stationarity around a constant. In Canadian dollars, slack also rejects with a constant only (p = 0.004), whereas FDI does not (p = 0.849) and has a significant linear trend. This motivates the trend comparison in Table 6.
+
+The exchange-rate level does not reject a unit root at 5 percent in the tested main-sample specifications. Its p-value is 0.075 under default AIC and 0.335 under the capped BIC comparison. The exchange rate therefore enters the analysis only as part of the exact algebraic translation in Section 5.6, not as a behavioural control.
+
+CAP: Table 5 Cointegration sensitivity
+@TABLE t4
+NOTE: Engle–Granger test of I and the stated expenditure measure, with a constant in the long-run equation. Null: no cointegration. The two settings change both the maximum lag search and the information criterion.
+In US dollars over 1981–2018, the null of no cointegration is rejected under both settings, with either expenditure measure. In Canadian dollars it is not rejected under the default setting (p = 0.382 with Y; 0.394 with N) but is rejected under the capped BIC setting (0.023 and 0.024). The extended-sample results show the same dependence on the lag search in both currencies. It would be misleading either to declare that Canadian-dollar cointegration is absent or to select the alternative setting solely because it produces rejection. The baseline therefore does not rely on an error-correction term, and the ECM is reported as a variant (Section 7.1).
+
+## 6.2 Baseline FDI estimates
+
+CAP: Table 6 Baseline Canadian-dollar estimates
+@TABLE t5
+NOTE: Dependent variable: ΔI, current C$ billions, 1982–2018. X is total expenditure Y in columns (1) and (3) and expenditure excluding business investment N = Y − I in columns (2) and (4). HAC standard errors (three lags) in parentheses. No significance stars are used.
+Table 6 reports the baseline Canadian-dollar change equation. With total expenditure as the control (column 1), the contemporaneous FDI coefficient is −0.015 and the lagged coefficient is −0.116. Their sum is −0.130, with a 95 percent interval of [−0.188, −0.073] (p < 0.001). With expenditure excluding business investment (column 2), the sum is −0.135 ([−0.258, −0.012], p = 0.031); the contemporaneous coefficient becomes positive (0.063) and the lagged coefficient more negative (−0.198).
+
+The sum has a direct scale interpretation. For a one-year C$1 billion increase in FDI inflows, holding the paths of expenditure changes and slack fixed, the baseline equation implies annual investment changes that are about C$0.13 billion lower in total over that year and the next; equivalently, the investment level is about C$0.13 billion lower after two years. The estimate is a conditional association, not an elasticity and not a causal response.
+
+Evidence about timing is weaker than evidence about the sum. The data reject the differences restriction δ_{0} + δ_{1} = 0 (p < 0.001), so the earlier practice of entering FDI as an annual change is not supported. They do not reject the levels restriction δ_{1} = 0 at 5 percent (p = 0.089 with Y; p = 0.055 with N). The lagged coefficient is larger in magnitude in every column, but its separate contribution is imprecisely estimated. Imposing δ_{1} = 0 gives −0.107 (p < 0.001) with Y, −0.085 (p = 0.158) with N, and −0.043 (p = 0.481) on the 1981–2024 sample. These restricted estimates are reported for comparison with earlier drafts rather than dismissed because their significance differs.
+
+Columns 3 and 4 add a linear trend. With total expenditure, the coefficient sum falls to −0.050, with an interval of [−0.150, 0.050] (p = 0.324). With expenditure excluding business investment, it becomes more negative, −0.171 ([−0.307, −0.034], p = 0.014). The trend coefficient itself is imprecise in both columns (p = 0.101 and 0.640). I present the trend-free equation as the baseline because it keeps the change equation parallel to the earlier specifications and to the currency bridge. This is a presentation choice. Neither the trend tests nor the residual diagnostics, which do not reject the null of no serial correlation in any of the four columns, show that the trend-free equation is statistically superior. A conclusion that the negative association is robust must therefore be qualified: it does not survive adding a trend when total expenditure is the control.
+
+CAP: Figure 2 FDI coefficient sums across specifications
+@FIG 2 extended/output/figures/figure2_coefficient_sums.png
+NOTE: Points show δ₀ + δ₁ and lines 95% HAC intervals. Blue: Canadian-dollar specifications; orange: US-dollar comparisons. The two rows for 1991–2018 compare the archived and directional FDI series on the same years. Source: author calculations.
+## 6.3 Expenditure, slack and the levels benchmark
+
+In the baseline equation the expenditure-change coefficient is 0.431 (standard error 0.053). This is consistent with investment moving with demand conditions, but the accounting overlap and simultaneous determination prevent a structural interpretation (Section 3.3). With expenditure excluding business investment, the coefficient is similar (0.417) but less precise. The slack coefficient is close to zero in the baseline (−0.002, p = 0.977) and negative but imprecise with N (−0.123). The negative slack association reported in the earlier US-dollar levels and error-correction models therefore does not carry over to the Canadian-dollar change equation.
+
+CAP: Table 7 Levels benchmark in both currencies
+@TABLE t6
+NOTE: Original levels specification, equation (6). OLS uses 38 observations; AR(1) errors are fitted by iterative GLSAR. Conventional standard errors in parentheses.
+Table 7 re-estimates the original levels specification in both currencies. The FDI coefficient is 0.124 (p = 0.156) by OLS and 0.053 (p = 0.405) with AR(1) errors in US dollars, and 0.119 (p = 0.205) and 0.027 (p = 0.673) in Canadian dollars. Neither currency reproduces a statistically significant positive levels association, and currency matters little in levels: the revaluation component that separates the two specifications arises from differencing (Section 7.2). These static levels coefficients describe trending nominal series and are not comparable in horizon to the change-equation coefficients.
+
+# 7 Robustness and diagnostic extensions
+
+## 7.1 Sensitivity of the coefficient sum
+
+CAP: Table 8 Sensitivity of the FDI coefficient sum
+@TABLE t7
+NOTE: C$ unless stated; HAC standard errors with three lags. BG is the two-lag Breusch–Godfrey p-value. Extended-sample rows include a 2020 indicator. Statistics Canada rows use current releases (Appendix E). Exploratory downturn-year specifications are reported in Appendix D.
+Table 8 collects the coefficient sum across the alternative specifications described in Section 5.8, and Figure 2 plots them. The point estimate is negative in every Canadian-dollar row. It is significant at 5 percent in the baseline with either expenditure control, in the ECM variant and the extended sample with total expenditure, in all four common-sample dynamic variants, and with all three FDI-series comparisons. It is not significant in three cases: with a linear trend and total expenditure (Section 6.2), in the ECM variant with expenditure excluding investment (−0.038, p = 0.407), and in the 1981–2024 sample with expenditure excluding investment (−0.081, p = 0.238).
+
+The ECM variant with expenditure excluding investment also shows residual serial correlation (Breusch–Godfrey p = 0.018), as does the common-sample variant that adds lagged investment and expenditure changes with total expenditure (p = 0.001). Coefficient-sum stability in these rows does not establish adequate dynamics. A lagged dependent variable alongside serially correlated errors can create further estimation problems, so a richer-looking equation is not necessarily better specified.
+
+Extending the sample through 2024 with a 2020 indicator gives −0.099 (p = 0.040) with total expenditure and −0.081 (p = 0.238) with expenditure excluding investment. A single indicator for 2020 is limited. It permits an intercept shift in that year but cannot capture changing behavioural slopes, multiple pandemic years, recovery dynamics, or all other changes between 2019 and 2024. The extension is therefore a sensitivity exercise rather than evidence of a dated structural break.
+
+Changing the HAC bandwidth leaves the coefficients unchanged but alters their standard errors: with one, three and four lags, the baseline interval is [−0.206, −0.055], [−0.188, −0.073] and [−0.178, −0.082], with p < 0.001 in each case. Leave-one-out coefficient sums range from −0.155 (omitting 2001) to −0.095 (omitting 2009), so the sign is not attributable to a single observation. Constructed variables are held fixed in these calculations, and no inferential p-values are assigned to the gapped deletion samples. Exploratory specifications that add indicators for 2001, 2009 and 2015 retain a negative and significant coefficient sum, between −0.092 and −0.125 (Appendix D).
+
+CAP: Figure 3 Residual autocorrelation
+@FIG 3 extended/output/figures/figure3_residual_acf.png
+NOTE: Left: C$ baseline change equation, X = Y. Right: the earlier US$ error-correction model with current FDI only. Shaded bands are approximate pointwise 95% bands and are descriptive. Source: author calculations.
+Figure 3 compares residual autocorrelation in the baseline with the earlier US-dollar error-correction model. The baseline residual autocorrelations lie within approximate pointwise bands at the first six lags, consistent with its Breusch–Godfrey p-value of 0.223. The earlier specification shows first-order and longer-lag dependence outside those bands (Breusch–Godfrey p = 0.001). With a short sample, neither the plots nor individual p-values should be interpreted mechanically.
+
+## 7.2 Currency and the bridge between specifications
+
+CAP: Table 9 Currency bridge: contributions to the FDI coefficient sum
+@TABLE t8
+NOTE: Each cell is an adjustment's Shapley contribution averaged over all orders of the adjustments (120 orders for the two-term model, 24 for the current-FDI-only model), with its range across orders in brackets. Ranges describe order sensitivity, not sampling uncertainty.
+Table 9 reports the bridge between the currency specifications. For the baseline two-term model, the exact US-dollar translation gives a coefficient sum of −0.025, identical to the directly estimated US-dollar equation; applying all five adjustments gives the Canadian-dollar estimate of −0.130. Averaged over all 120 orders, replacing revalued changes with Canadian-dollar changes (V) contributes −0.096 of the total movement of −0.105, and between −0.084 and −0.108 in every order. The other adjustments contribute on average −0.007 (W), +0.020 (C), −0.004 (L) and −0.017 (E). With expenditure excluding investment, V again dominates: −0.076 of a −0.099 total, with range [−0.099, −0.043]. For the earlier current-FDI-only model, V contributes −0.102 of a −0.108 movement.
+
+The same translation applied to the levels benchmark, where differencing-induced revaluation terms are absent, moves the FDI coefficient only between 0.109 and 0.124, with no change in sign. Within this specified set of adjustments, revaluation in the differenced variables accounts for most of the currency-related movement. This is an accounting attribution, conditional on the adjustments and their grouping, rather than a causal explanation or a decomposition of sampling uncertainty. It is consistent with the US-dollar change equation and error-correction model producing coefficient sums close to zero (−0.025 and 0.004; Table 8).
+
+## 7.3 Alternative FDI series
+
+The baseline FDI regressor is the World Bank net-inflow indicator expressed in Canadian dollars. Appendix E documents that it closely tracks Statistics Canada's direct investment liabilities (correlation 0.99986 over 1981–2018) but not its directional inward-FDI measure, which classifies reverse investment differently. Replacing the regressor with the liabilities series leaves the baseline coefficient sum at −0.131 (Table 8). Over 1991–2018, the period for which the directional series is available, it gives −0.146, compared with −0.143 for the archived series on the same years. The negative association therefore does not depend on the World Bank source, its currency conversion, or the choice between the asset-liability and directional presentations, over the periods for which these comparisons are possible. These replacement-series regressions use current Statistics Canada releases; the archived dataset itself is unchanged.
+
+## 7.4 Capacity interaction and marginal associations
+
+CAP: Table 10 Timing-aligned capacity interaction
+@TABLE t9
+NOTE: Equation (11), C$, 1982–2018, 37 observations, HAC three-lag covariance; 95% intervals in brackets. Joint p tests η₀ = η₁ = 0. Exploratory indicator and omission checks are reported in Appendix D.
+Table 10 reports the timing-aligned interaction model. The null η_{0} = η_{1} = 0 is rejected with either expenditure control (joint p < 0.001). This is evidence against constant contemporaneous and lagged slopes within the estimated specification. It should not be described as an absence of moderation simply because some marginal-association intervals include zero. The estimates have opposite signs: η_{0} = 0.055 and η_{1} = −0.115 with total expenditure, and η_{0} = 0.122 and η_{1} = −0.188 with expenditure excluding investment. An additional percentage point of current slack is therefore associated with a more positive contemporaneous FDI slope and a more negative lagged slope.
+
+Whether slack changes the combined association is a separate question, answered by the test of η_{0} + η_{1} = 0. The sum is −0.060 ([−0.136, 0.015], p = 0.116) with total expenditure and −0.066 ([−0.174, 0.042], p = 0.231) with expenditure excluding investment. The data therefore do not reject the hypothesis that the combined FDI association is the same at all slack levels; the two slopes shift in offsetting directions. The point estimates are negative, opposite to the hypothesis that FDI is more positively associated with investment when spare capacity is available.
+
+CAP: Table 11 Marginal FDI associations by capacity slack
+@TABLE t10
+NOTE: Total expenditure control. Slack S at the quartiles of the estimation sample; positive values indicate output below potential. Intervals use the full HAC covariance of the FDI and interaction coefficients.
+With total expenditure, the conditional coefficient sum declines from −0.027 at the 25th percentile of slack to −0.201 at the 75th, but all three intervals include zero (Table 11). This concerns the precision of the sum at particular slack values; the test of η_{0} + η_{1} = 0 is the direct test of whether the sum differs across slack values. The interpretation holds slack fixed at a common value rather than describing an investment response along a changing slack path.
+
+Exploratory specifications adding indicators for 2001 and 2009 retain a negative baseline FDI coefficient sum but weaken the evidence for capacity interactions. The joint interaction p-value rises to 0.110 with total expenditure and 0.035 with expenditure excluding business investment. Detailed results are reported in Appendix D.
+
+The restricted contemporaneous-only interaction of earlier drafts is not significant (η = −0.015, p = 0.618 with total expenditure), whereas the timing-aligned interaction with nominal slack U is jointly significant (p = 0.002). The restricted and timing-aligned models test different restrictions, so these findings are not contradictory. Taken together, the estimates suggest an exploratory change in timing with current slack, with no detectable change in the combined FDI association. The specification was developed after observing the baseline results and uses retrospective HP-filtered slack; these features further limit a structural interpretation.
+
+## 7.5 Answers to the research questions
+
+For RQ1, the baseline Canadian-dollar equation gives a negative conditional association between FDI inflows and investment changes over the current and following year, with a coefficient sum of −0.130. The association is negative in every Canadian-dollar specification examined and significant in most, but it is not significant when a linear trend is added with total expenditure as the control, or in two specifications that exclude business investment from expenditure. For RQ2, cointegration between investment and expenditure is supported in the main US-dollar sample but depends on lag-selection settings in Canadian dollars and in the extended sample; the baseline therefore does not rely on error correction. For RQ3, current slack is associated with a shift in the timing of the FDI association but not with a detectable change in the combined association, and the timing evidence is sensitive to the 2001 and 2009 downturns. For RQ4, the exact bridge attributes most of the difference between the currency specifications to the revaluation component that differencing introduces in US dollars.
+
+These answers deliberately distinguish between types of robustness. A result can survive the removal of any single observation and a change of FDI source, yet weaken when a trend is added. It can remain significant under different standard errors while depending on how expenditure is defined. The research conclusion rests on that full pattern rather than a count of significant coefficients.
+
+# 8 Discussion and policy implications
+
+## 8.1 What the evidence supports
+
+The strongest conclusion is about interpretation. The earlier positive levels association does not survive a specification that respects the time-series properties of the data, and the near-zero US-dollar change estimates reflect exchange-rate revaluation in the dependent variable as well as investment behaviour. Measured in Canadian dollars, the data instead show a negative conditional association between FDI inflows and investment changes, concentrated in the following year. The association is robust to the FDI source, single observations, additional short-run dynamics and covariance choices, but it is sensitive to how trends and expenditure are modelled.
+
+This pattern does not imply that every model is equally credible, nor does it identify a single correct one. The cointegration results and residual diagnostics give reasons to treat the error-correction variants more cautiously than the baseline, while the trend comparison shows that the baseline itself rests on a deterministic specification the data do not settle. The extended working paper's contribution is to make those dependencies visible and to restrict the substantive claim accordingly.
+
+The distinction between financing and capital formation suggests possible explanations for a negative lagged association, but they are not tested directly here. Inflows dominated by acquisitions of existing firms, followed by consolidation of capital spending, would produce such a pattern; so would inflows that peak late in an investment upswing, as in 2000 and 2007. Variation in acquisition shares, sectoral composition, financing choices, or investment timing could matter. Without the corresponding data, these remain plausible mechanisms rather than established explanations.
+
+@KEEP 201-207
+# 9 Limitations and future research
+
+@KEEP 209-213
+The main sample is small for the number of decisions involved: deterministic trends, lag selection, cointegration testing, the timing of the FDI terms, interaction terms, and robust covariance estimates. Asymptotic tests can be imprecise in that setting. Several specifications, including the Canadian-dollar baseline, the two-term FDI timing, the alternative expenditure measure, the downturn indicators and the timing-aligned interaction, were developed during the revision after earlier results had been seen. Reporting the complete set of comparisons reduces selective presentation, but it does not turn the collection of p-values into a joint confirmatory experiment.
+
+The baseline equation does not reject the null of no residual serial correlation at two lags, but the ECM variant with expenditure excluding investment and the dynamic variant with lagged investment changes do. Failure to reject the null does not establish an adequate dynamic specification, and the trend comparison shows that the deterministic specification is not settled by the data. More lags are not a free correction because they consume degrees of freedom and may introduce additional bias when errors remain dependent. A defensible extension should justify a parsimonious dynamic structure, inspect stability, and report failures rather than suppress them.
+
+@KEEP 216-220
+# 10 Conclusion
+
+This extended working paper reconstructs and reassesses the relationship between FDI net inflows and business investment in Canada. The main evidence comes from 38 annual observations for 1981–2018, with an extension through 2024. The analysis distinguishes the conditional FDI association, its timing, the investment–expenditure long-run relationship, capacity moderation and the role of currency measurement, rather than treating one coefficient as a complete answer about foreign investment.
+
+In Canadian dollars, the primary unit, higher FDI inflows are associated with lower business-investment changes over the current and following year: the baseline coefficient sum is −0.130, with a 95 percent interval of [−0.188, −0.073]. The association is negative in every Canadian-dollar specification examined, and it survives changes in the FDI source, the omission of single years and additional short-run dynamics. It is, however, sensitive to how trends and expenditure are modelled. Adding a linear trend with total expenditure as the control reduces the sum to −0.050, with an interval that includes zero, and with expenditure excluding business investment the error-correction and extended-sample variants are imprecise. The trend-free baseline is a presentation choice, not a specification the data show to be superior.
+
+The original positive US-dollar association does not survive. An exact bridge between the currency specifications attributes most of the difference to exchange-rate revaluation introduced by differencing in US dollars. Capacity slack shifts the estimated timing of the FDI association but not, detectably, its combined size, and that timing evidence is sensitive to the 2001 and 2009 downturns.
+
+Consequently, the study does not establish that foreign investment displaces domestic investment, nor that FDI is economically irrelevant. The estimates are conditional, model-dependent descriptions of financial inflows and business spending in nominal Canadian dollars. A negative association is consistent both with acquisition-driven inflows and with inflows that peak late in investment upswings, and the aggregate data cannot distinguish these explanations.
+
+The methodological contribution is a transparent account of what changed when the undergraduate analysis was reconstructed and its assumptions were tested. The substantive implication is that attracting financial inflows and expanding productive capacity are related but distinct policy objectives. Stronger conclusions require investment data by ownership and FDI entry mode, explicit treatment of real and nominal movements, adequate dynamics, and a credible identification strategy.
+
+@KEEP 226-230
+REF: Government of Canada. Investment Canada Act, R.S.C. 1985, c. 28 (1st Supp.), sections 20 and 21. https://laws-lois.justice.gc.ca/eng/acts/i-21.8/
+@KEEP 231-233
+REF: Rogers, Carolyn. 2024. Time to Break the Glass: Fixing Canada's Productivity Problem. Speech to the Halifax Partnership, Halifax, Nova Scotia, March 26. Bank of Canada.
+@KEEP 234-234
+REF: Statistics Canada. 2008. Analysis — Fourth Quarter 2007. Canada's Balance of International Payments, catalogue no. 67-001-X.
+REF: Statistics Canada. 2015. Revisions to Canada's Balance of International Payments. Explains the asset-liability and directional presentations of direct investment.
+@KEEP 235-235
+REF: Statistics Canada. n.d. Table 36-10-0025-01 Direct investment flows, quarterly; Table 36-10-0442-01 Balance of international payments, direct investment conceptual presentations, quarterly; Table 36-10-0471-01 Balance of international payments, financial account, annual. Retrieved November 11, 2026.
+REF: statsmodels developers. n.d. Documentation for adfuller, coint, GLSAR, regression HAC covariance estimation, and Breusch–Godfrey diagnostics. https://www.statsmodels.org/stable/. Software requirements for the replication are listed in the project repository.
+@KEEP 237-237
+REF: World Bank. n.d. World Development Indicators and Metadata Glossary. Series NE.DAB.TOTL.CD, NE.DAB.TOTL.CN, BX.KLT.DINV.CD.WD, and PA.NUS.FCRF. https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BX.KLT.DINV.CD.WD. Metadata checked November 1, 2026; series retrieved for source comparisons November 11, 2026; archived estimation values retained.
+# Appendix A Variable construction and sample accounting
+
+The investment outcome is business gross fixed capital formation, measured in current-price billions of Canadian dollars in the primary specifications. The expenditure variable is gross national expenditure in the same currency, or expenditure net of business investment, N = Y − I, where stated. Slack U is potential minus actual output valued at the nominal GDP price scale, as defined in equations (4)–(5); S is the same gap in percent of potential, with the sign reversed from gap_pct. FDI enters as the annual net inflow and its one-year lag. Neither a negative slack value nor a fall in FDI is recoded to zero.
+
+The main sample runs from 1981 to 2018 inclusive, producing 38 level observations. Taking first differences and lagging FDI removes the first year, leaving 37 observations for the baseline change equation and its ECM variant. The common-sample dynamic comparison also requires lagged first differences, so it starts in 1983 and has 36 observations. The extended sample has 44 levels, 43 baseline observations and 42 common-sample observations. Statistics Canada's directional inward-FDI series begins in 1990, so its comparison starts in 1991 with 28 observations. Effective ADF sample sizes depend additionally on their selected lags.
+
+@KEEP 242-242
+@TABLE tA1
+@KEEP 244-245
+The long-run residual used in the ECM variant is estimated separately for each currency, expenditure measure and sample endpoint. ECT is that residual shifted by one year. It is not an externally observed equilibrium gap. The baseline change equation uses contemporaneous first differences in expenditure, contemporaneous slack, and current and lagged FDI. The extended equations add an indicator equal to one in 2020 only.
+
+# Appendix B Reproduction and research transparency
+
+The project repository (github.com/Porokmi/canada-fdi-investment) contains the two archived input files, the analysis notebook, and the scripts that produce every number in this paper. The script extended/paper_outputs.py builds all tables and figures, and extended/checks.py prints the full set of diagnostics. Both read only the archived files and do not download revised source values, except that the comparisons with Statistics Canada FDI series (Table 8 and Appendix E) and the source checks in Sections 5.1 and 5.7 require the --online option, which retrieves current releases.
+
+The levels benchmarks use conventional covariance estimates. The change and error-correction models use HAC with three lags unless otherwise stated. Main-model comparisons use all available observations; the explicitly labelled common-sample dynamic rows start in 1983. Neither the latter coefficients nor their observation counts should be substituted silently into the 37-observation baseline table.
+
+Leave-one-out checks are conditional coefficient-influence calculations. Differenced values, lagged FDI and slack are constructed before deleting each observation, and the full-series filter is not rebuilt for every deletion. Because the remaining observations are not a consecutive annual sequence, no HAC or Breusch–Godfrey inference is reported for the baseline deletion exercises. The interaction omission checks in Appendix D apply HAC to the gapped sequence and are labelled descriptive.
+
+The currency bridge estimates every combination of the five adjustments for each bridge. The 80 fitted models, with their design-matrix rank and condition number, are saved to extended/output/bridge_combinations.csv.
+
+@KEEP 251-252
+@KEEP 253-256
+The November 2026 revision goes further than the original reassessment. Measured in Canadian dollars and with FDI allowed to enter with a one-year lag, the reconstructed data show a negative rather than a positive conditional association, which is sensitive to the treatment of trends and expenditure. The original complementarity interpretation is therefore not supported in either currency.
+
+@KEEP 257-257
+# Appendix D Exploratory downturn-year indicators
+
+FDI inflows peaked in 2000 and 2007, shortly before the 2001 slowdown and the 2009 recession. This raises the possibility that the negative lagged association reflects those episodes. The specifications below add indicators for selected downturn years. They were added after inspecting the data and are exploratory.
+
+CAP: Table D1 Baseline coefficient sum with downturn-year indicators
+@TABLE tD1
+NOTE: Baseline equation (7), C$, total expenditure, 1982–2018, HAC three-lag covariance.
+The coefficient sum remains negative and significant in each specification, between −0.092 and −0.125, and the lagged coefficient remains the larger of the two in magnitude.
+
+CAP: Table D2 Capacity interaction with downturn-year indicators and omissions
+@TABLE tD2
+NOTE: Equation (11), C$, HAC three-lag covariance; 95% intervals in brackets. Omission rows apply HAC to a gapped sequence and are descriptive only.
+Indicators for 2001 and 2009 weaken the joint evidence for the capacity interaction, raising the joint p-value to 0.110 with total expenditure and 0.035 with expenditure excluding business investment; omitting 2009 gives p = 0.037 with total expenditure. Omitting 2009 gives the same point estimates as adding a 2009 indicator, as expected for a single-year indicator. Across these checks η_{0} remains positive and η_{1} negative, and the interval for η_{0} + η_{1} includes zero in every case. These changes indicate sensitivity to those observations and controls. They do not establish that the pattern is entirely driven by downturns, nor do comparisons of significance alone establish that the underlying coefficients differ across specifications.
+
+# Appendix E FDI source verification
+
+This appendix compares the archived FDI regressor with current public releases. It is not a rerun of the archived dataset's construction. The World Bank API responses were retrieved on November 11, 2026. Statistics Canada's annual and quarterly tables report release dates of May 28 and August 27, 2026, respectively, so differences in release vintage remain relevant.
+
+For each year, reconstructed C$ FDI equals BX.KLT.DINV.CD.WD multiplied by PA.NUS.FCRF and divided by one billion. Statistics Canada's annual liabilities come directly from Table 36-10-0471-01. Directional inward flows are calendar-year sums from Table 36-10-0442-01, cross-checked against Table 36-10-0025-01 where available.
+
+CAP: Table E1 FDI net inflows by source, C$ billions
+@TABLE tE1
+NOTE: Current releases retrieved November 11, 2026. World Bank values are converted at the annual average official exchange rate.
+Across 1981–2018, the converted World Bank series and Statistics Canada's direct investment liabilities have a correlation of approximately 0.99986. Their mean absolute difference is C$0.242 billion, and their largest absolute difference is C$3.239 billion in 2007. The archived FDI series gives the same statistics, so it matches the current World Bank release over this period. These statistics show a close empirical match, not an exact conversion identity. In 2015, the gap relative to directional inward FDI is C$20.653 billion, while the gap relative to liabilities is only C$0.438 billion. This strongly suggests that presentation differences matter for selecting the comparator; it does not by itself prove the precise source lineage of every World Bank observation (Statistics Canada 2015).
+
+The retained regressor is therefore described as the World Bank FDI net-inflow indicator expressed in Canadian dollars. It aligns closely with direct investment liabilities and is not an exact reconstruction of Statistics Canada's directional inward-FDI series. The regressions in Table 8 show that the baseline coefficient sum is essentially unchanged with either Statistics Canada series. Annual and quarterly conversions cannot be distinguished from these annual totals alone; remaining discrepancies would require matched source vintages, the original conversion documentation and, if available, the underlying higher-frequency flows. The archived study data remain frozen for reproducibility.
+
+@KEEP 258-258

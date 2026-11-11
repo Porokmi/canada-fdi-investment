@@ -1,5 +1,5 @@
-Variable,ADF stat (level),p (level),ADF stat (diff.),p (diff.)
-I,-2.99,0.136,-4.59,<0.001
-Y,-3.33,0.061,-4.15,<0.001
-U,-3.60,0.029,-5.41,<0.001
-FDI,-4.99,<0.001,-5.25,<0.001
+Variable,"p (level, constant + trend)","p (level, constant only)",p (first difference)
+I,0.543,0.992,<0.001
+Y,0.970,1.000,<0.001
+U,0.010,0.004,<0.001
+FDI,<0.001,0.849,<0.001
