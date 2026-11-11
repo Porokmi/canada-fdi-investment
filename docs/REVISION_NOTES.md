@@ -44,6 +44,20 @@ The extension reports four explicit research questions and adds test-setting sen
 
 The extended USD change equation with differenced FDI yields about 0.146 (p = 0.031), while the corresponding CAD value is about 0.173 (p = 0.062). These measure associations with changes in inflows, not the inflow levels in the baseline ECM. The full draft reports them without treating one significant alternative as a preferred causal specification. Residual serial correlation and other limitations remain documented.
 
+## Revision of 11 November 2026
+
+After reviewer feedback on the 1 November draft, both papers were revised. The changes address several items that were previously listed as remaining work:
+
+- **Currency.** Canadian dollars are now the primary unit. Converting to US dollars at a time-varying rate adds a revaluation term to every first difference; an exact algebraic bridge between the two specifications, with contributions averaged over all 120 orders of five adjustments, attributes most of the difference between the US$ and C$ estimates to that term.
+- **FDI timing.** The baseline is a C$ change equation with current and lagged FDI, which nests the levels and differences forms used earlier. The data reject the differences restriction and do not reject the levels restriction at 5 percent. The coefficient sum is −0.130 (95% interval −0.188 to −0.073).
+- **Deterministic terms.** FDI rejects a unit root only around a trend. The trend-free baseline is kept as a presentation choice and the trend specification is reported alongside it; with total expenditure, the sum falls to −0.050 and is not significant.
+- **Expenditure containing investment.** Every main specification is also estimated with expenditure net of business investment (N = Y − I).
+- **Large FDI episodes.** Exploratory indicators for 2001, 2009 and 2015 are reported in Appendix D of the Extended Working Paper.
+- **FDI source.** The World Bank series closely tracks Statistics Canada's direct investment liabilities; replacing it with that series, or with the directional inward-FDI series over 1991–2018, leaves the coefficient sum essentially unchanged.
+- **Capacity interaction.** The timing-aligned interactions are jointly significant, but their sum is not, and the joint evidence weakens with the 2001 and 2009 indicators.
+
+The shorter paper, notebook, tables and figures were updated together with the Extended Working Paper. The scripts for the revision are `extended/paper_outputs.py` and `extended/checks.py`. The earlier `extended/analysis.py` and the audit in `src/` reproduce the 1 November results and are kept for reference.
+
 ## Remaining research work
 
 - Compare a parsimonious set of lag structures and deterministic terms using economic reasoning and residual diagnostics. Report the alternatives, rather than selecting for an FDI significance result.
@@ -51,7 +65,7 @@ The extended USD change equation with differenced FDI yields about 0.146 (p = 0.
 - Assess sensitivity to large FDI episodes, structural instability, and the full-sample HP filter. The processed CSVs alone do not permit a faithful one-sided reconstruction of the original real-GDP filter.
 - Clarify the implications of expenditure containing investment and distinguish conditioning on demand from estimating a total effect of FDI. Alternative demand measures require their own economic justification.
 - Preserve causal restraint unless a credible identification strategy and suitable data are available. A negative coefficient, HAC errors, or cointegration alone does not identify displacement.
-- Update the paper, notebook, tables, and figures together once a justified specification is settled. The shorter PDF retains the earlier prose revision and original tables. The Extended Working Paper incorporates and extends the diagnostics, with its own analysis and outputs.
+- Examine whether the negative association reflects acquisition-driven inflows or inflows that peak late in investment upswings, using investment data by ownership and FDI entry mode. The aggregate data cannot distinguish these explanations.
 
 ## Reproducibility and assistance
 

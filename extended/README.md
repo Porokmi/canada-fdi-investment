@@ -1,8 +1,31 @@
 # Canada FDI extended working paper replication package
 
-This package accompanies the November 2026 Extended Working Paper by Porokmi Sambahamphe. It extends the shorter revised paper with explicit research questions, a literature discussion, an economic framework, and additional diagnostics. The analysis estimates conditional associations rather than causal effects.
+This folder accompanies the Extended Working Paper by Porokmi Sambahamphe. It extends the shorter paper with explicit research questions, a literature discussion, an economic framework, and additional diagnostics. The analysis estimates conditional associations rather than causal effects.
 
-## Reproduce the analysis
+## Current version (revised 11 November 2026)
+
+The revised paper measures all series in Canadian dollars and uses a change equation with current and lagged FDI as its baseline. From the repository root:
+
+```sh
+python extended/paper_outputs.py --online   # every table and figure in the paper -> output/
+python extended/checks.py --online          # full diagnostics printout
+```
+
+| File | Contents |
+|---|---|
+| `paper_outputs.py` | Builds every table (`output/paper_tables.json`) and figure (`output/figures/`) in the revised paper |
+| `checks.py` | Full diagnostics, including the currency bridge, interaction tests and source checks |
+| `output/bridge_combinations.csv` | All 80 fitted currency-bridge models, with design-matrix rank and condition number |
+| `manuscript/` | Source text and script that assemble the revised .docx from the original Word file |
+| `revision_notes.md` | Revised motivation and methodology, with the changelog of the review |
+
+Both scripts read only the archived CSVs in `../data/`. `--online` adds comparisons with current World Bank and Statistics Canada releases; without it, those rows are skipped.
+
+## Version of 1 November 2026 (kept for reference)
+
+The files below reproduce the first version of the Extended Working Paper, which used US dollars as the primary unit. Its PDF is in the git history; its conclusions are superseded by the revision above.
+
+## Reproduce the analysis (1 November version)
 
 Use Python 3.12 in a virtual environment. From this folder:
 
